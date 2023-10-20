@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.core.generated="false" org.eventb.emf.persistence.emf_id="_uG8RXm9EEe6amqEVzbJqOA" org.eventb.texttools.text_lastmodified="1697805143781" org.eventb.texttools.text_representation="machine m2 refines m1 sees c0Etage&#10;variables&#10;&#9;etage&#10;&#9;demandes&#10;invariants&#10;@demandes_ty demandes ⊆ 0‥E&#10;events&#10;  event INITIALISATION extends INITIALISATION&#10;  then&#10;  &#9;@init1 demandes ≔  ∅&#10;  end&#10;  event ENREGISTRER_DEMANDE&#10;  any d where @d_ty d ∈ 0‥E&#10;  then&#10;  &#9;@enreg_demande demandes ≔ demandes ∪ {d}&#10;  end&#10;&#10;  event SE_DEPLACER&#10;  any d where @d_ty d ∈ demandes ∧ demandes ≠ ∅&#10;  then&#10;  &#9;@se_deplace demandes ≔ demandes ∖ {d}&#10;  end&#10;end&#10;" version="5">
+    <org.eventb.core.refinesMachine name="_jtVygG8_Ee6amqEVzbJqOA" org.eventb.core.target="m1"/>
+    <org.eventb.core.seesContext name="_TMi48GnJEe6mpes-9iWlmA" org.eventb.core.target="c0Etage"/>
+    <org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="INITIALISATION" org.eventb.emf.persistence.emf_id="_uG8RVG9EEe6amqEVzbJqOA">
+        <org.eventb.core.action name="_VGpcoG9EEe6amqEVzbJqOA" org.eventb.core.assignment="demandes ≔  ∅" org.eventb.core.generated="false" org.eventb.core.label="init1" org.eventb.emf.persistence.emf_id="_uG8RU29EEe6amqEVzbJqOA"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_-ToT4GnJEe6mpes-9iWlmA" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="ENREGISTRER_DEMANDE" org.eventb.emf.persistence.emf_id="_uG8RWW9EEe6amqEVzbJqOA">
+        <org.eventb.core.action name="_-ToT4WnJEe6mpes-9iWlmA" org.eventb.core.assignment="demandes ≔ demandes ∪ {d}" org.eventb.core.generated="false" org.eventb.core.label="enreg_demande" org.eventb.emf.persistence.emf_id="_uG8RWG9EEe6amqEVzbJqOA"/>
+        <org.eventb.core.guard name="_xFnlAGnKEe6mpes-9iWlmA" org.eventb.core.generated="false" org.eventb.core.label="d_ty" org.eventb.core.predicate="d ∈ 0‥E" org.eventb.emf.persistence.emf_id="_uG8RV29EEe6amqEVzbJqOA"/>
+        <org.eventb.core.parameter name="_xFpaMGnKEe6mpes-9iWlmA" org.eventb.core.generated="false" org.eventb.core.identifier="d" org.eventb.emf.persistence.emf_id="_uG8RVm9EEe6amqEVzbJqOA"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_DEHgAGnNEe6mpes-9iWlmA" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="SE_DEPLACER" org.eventb.emf.persistence.emf_id="_uG8RXW9EEe6amqEVzbJqOA">
+        <org.eventb.core.action name="_DEHgAWnNEe6mpes-9iWlmA" org.eventb.core.assignment="demandes ≔ demandes ∖ {d}" org.eventb.core.generated="false" org.eventb.core.label="se_deplace" org.eventb.emf.persistence.emf_id="_uG8RXG9EEe6amqEVzbJqOA"/>
+        <org.eventb.core.guard name="_DEHgAmnNEe6mpes-9iWlmA" org.eventb.core.generated="false" org.eventb.core.label="d_ty" org.eventb.core.predicate="d ∈ demandes ∧ demandes ≠ ∅" org.eventb.emf.persistence.emf_id="_uG8RW29EEe6amqEVzbJqOA"/>
+        <org.eventb.core.parameter name="_DEHgBGnNEe6mpes-9iWlmA" org.eventb.core.generated="false" org.eventb.core.identifier="d" org.eventb.emf.persistence.emf_id="_uG8RWm9EEe6amqEVzbJqOA"/>
+    </org.eventb.core.event>
+    <org.eventb.core.invariant name="_uVs3kGnJEe6mpes-9iWlmA" org.eventb.core.generated="false" org.eventb.core.label="demandes_ty" org.eventb.core.predicate="demandes ⊆ 0‥E" org.eventb.emf.persistence.emf_id="_uG8RUm9EEe6amqEVzbJqOA"/>
+    <org.eventb.core.variable name="_vPSg0G9BEe6amqEVzbJqOA" org.eventb.core.generated="false" org.eventb.core.identifier="etage" org.eventb.emf.persistence.emf_id="_uG8RUG9EEe6amqEVzbJqOA"/>
+    <org.eventb.core.variable name="_uVs3kWnJEe6mpes-9iWlmA" org.eventb.core.generated="false" org.eventb.core.identifier="demandes" org.eventb.emf.persistence.emf_id="_uG8RUW9EEe6amqEVzbJqOA"/>
+</org.eventb.core.machineFile>

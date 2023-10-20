@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.core.generated="false" org.eventb.emf.persistence.emf_id="_Rd17dmnJEe6mpes-9iWlmA" org.eventb.texttools.text_lastmodified="1697202367656" org.eventb.texttools.text_representation="machine m1 sees c0Etage&#10;variables etage&#10;invariants&#10;@etage_ty etage ∈ 0‥E&#10;events&#10;  event INITIALISATION&#10;  then&#10;  @init0 etage ≔ 0&#10;  end&#10;&#10;  event deplacer&#10;  then&#10;     @dep etage :∈ 0‥E ∖{etage}&#10;  end&#10;end&#10;" version="5">
+    <org.eventb.core.seesContext name="_yZv4smnFEe6mpes-9iWlmA" org.eventb.core.target="c0Etage"/>
+    <org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="INITIALISATION" org.eventb.emf.persistence.emf_id="_Rd17c2nJEe6mpes-9iWlmA">
+        <org.eventb.core.action name="_803sUGnIEe6mpes-9iWlmA" org.eventb.core.assignment="etage ≔ 0" org.eventb.core.generated="false" org.eventb.core.label="init0" org.eventb.emf.persistence.emf_id="_Rd17cmnJEe6mpes-9iWlmA"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_yZv4tGnFEe6mpes-9iWlmA" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="deplacer" org.eventb.emf.persistence.emf_id="_Rd17dWnJEe6mpes-9iWlmA">
+        <org.eventb.core.action name="_yZv4tWnFEe6mpes-9iWlmA" org.eventb.core.assignment="etage :∈ 0‥E ∖{etage}" org.eventb.core.generated="false" org.eventb.core.label="dep" org.eventb.emf.persistence.emf_id="_Rd17dGnJEe6mpes-9iWlmA"/>
+    </org.eventb.core.event>
+    <org.eventb.core.invariant name="_yZv4tmnFEe6mpes-9iWlmA" org.eventb.core.generated="false" org.eventb.core.label="etage_ty" org.eventb.core.predicate="etage ∈ 0‥E" org.eventb.emf.persistence.emf_id="_Rd17cWnJEe6mpes-9iWlmA"/>
+    <org.eventb.core.variable name="_yZv4t2nFEe6mpes-9iWlmA" org.eventb.core.generated="false" org.eventb.core.identifier="etage" org.eventb.emf.persistence.emf_id="_Rd17cGnJEe6mpes-9iWlmA"/>
+</org.eventb.core.machineFile>

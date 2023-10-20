@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.scContextFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd">
+    <org.eventb.core.scAxiom name="'" org.eventb.core.label="E_ty" org.eventb.core.predicate="E∈ℕ1" org.eventb.core.source="/TP_Ascenseur/c0Etage.buc|org.eventb.core.contextFile#c0Etage|org.eventb.core.axiom#_Mk3zoGnEEe6mpes-9iWlmA" org.eventb.core.theorem="false"/>
+    <org.eventb.core.scAxiom name="(" org.eventb.core.label="D_ty" org.eventb.core.predicate="D={1,−1}" org.eventb.core.source="/TP_Ascenseur/c0Etage.buc|org.eventb.core.contextFile#c0Etage|org.eventb.core.axiom#_Ugdb0G9DEe6amqEVzbJqOA" org.eventb.core.theorem="false"/>
+    <org.eventb.core.scConstant name="D" org.eventb.core.source="/TP_Ascenseur/c0Etage.buc|org.eventb.core.contextFile#c0Etage|org.eventb.core.constant#_H44a0G9EEe6amqEVzbJqOA" org.eventb.core.type="ℙ(ℤ)"/>
+    <org.eventb.core.scConstant name="E" org.eventb.core.source="/TP_Ascenseur/c0Etage.buc|org.eventb.core.contextFile#c0Etage|org.eventb.core.constant#_Mk5BwGnEEe6mpes-9iWlmA" org.eventb.core.type="ℤ"/>
+</org.eventb.core.scContextFile>

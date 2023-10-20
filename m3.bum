@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.core.generated="false" org.eventb.emf.persistence.emf_id="_MO-mfW9GEe6amqEVzbJqOA" org.eventb.texttools.text_lastmodified="1697805775448" org.eventb.texttools.text_representation="machine m3 refines m2 sees c0Etage&#10;variables&#10;&#9;etage&#10;&#9;demandes&#10;&#9;direction&#10;invariants&#10;@direction_ty direction ∈ D&#10;events&#10;&#9;event INITIALISATION extends INITIALISATION&#10;&#9;then&#10;&#9;  &#9;@init2 direction ≔ 1&#10;&#9;end&#10;&#9;event SE_DEPLACER_HAUT extends SE_DEPLACER&#10;&#9;when&#10;&#9;&#9;@dir_demande_haut direction = 1 ∧ d &gt; etage&#10;&#9;end&#10;&#9;event SE_DEPLACER_BAS extends SE_DEPLACER&#10;&#9;when&#10;&#9;&#9;@dir_demande_bas direction = 1 ∧ d &lt; etage&#10;&#9;end&#10;end&#10;" version="5">
+    <org.eventb.core.refinesMachine name="_oxXGAG8_Ee6amqEVzbJqOA" org.eventb.core.target="m2"/>
+    <org.eventb.core.seesContext name="_oxXGAW8_Ee6amqEVzbJqOA" org.eventb.core.target="c0Etage"/>
+    <org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="INITIALISATION" org.eventb.emf.persistence.emf_id="_MO-mdW9GEe6amqEVzbJqOA">
+        <org.eventb.core.action name="_RA5vQG9EEe6amqEVzbJqOA" org.eventb.core.assignment="direction ≔ 1" org.eventb.core.generated="false" org.eventb.core.label="init2" org.eventb.emf.persistence.emf_id="_MO-mdG9GEe6amqEVzbJqOA"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_kuXi8G9FEe6amqEVzbJqOA" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="SE_DEPLACER_HAUT" org.eventb.emf.persistence.emf_id="_MO-meG9GEe6amqEVzbJqOA">
+        <org.eventb.core.refinesEvent name="_kuXi8W9FEe6amqEVzbJqOA" org.eventb.core.target="SE_DEPLACER"/>
+        <org.eventb.core.guard name="_4dmGrW9FEe6amqEVzbJqOA" org.eventb.core.generated="false" org.eventb.core.label="dir_demande_haut" org.eventb.core.predicate="direction = 1 ∧ d &gt; etage" org.eventb.emf.persistence.emf_id="_MO-md29GEe6amqEVzbJqOA"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_MPDe8G9GEe6amqEVzbJqOA" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="SE_DEPLACER_BAS" org.eventb.emf.persistence.emf_id="_MO-me29GEe6amqEVzbJqOA">
+        <org.eventb.core.refinesEvent name="_MPDe8W9GEe6amqEVzbJqOA" org.eventb.core.target="SE_DEPLACER"/>
+        <org.eventb.core.guard name="_MPDe8m9GEe6amqEVzbJqOA" org.eventb.core.generated="false" org.eventb.core.label="dir_demande_bas" org.eventb.core.predicate="direction = 1 ∧ d &lt; etage" org.eventb.emf.persistence.emf_id="_MO-mem9GEe6amqEVzbJqOA"/>
+    </org.eventb.core.event>
+    <org.eventb.core.invariant name="_25cbAG8_Ee6amqEVzbJqOA" org.eventb.core.generated="false" org.eventb.core.label="direction_ty" org.eventb.core.predicate="direction ∈ D" org.eventb.emf.persistence.emf_id="_MO-mc29GEe6amqEVzbJqOA"/>
+    <org.eventb.core.variable name="_q0tL4G9BEe6amqEVzbJqOA" org.eventb.core.generated="false" org.eventb.core.identifier="etage" org.eventb.emf.persistence.emf_id="_MO-mcG9GEe6amqEVzbJqOA"/>
+    <org.eventb.core.variable name="_q0tL4W9BEe6amqEVzbJqOA" org.eventb.core.generated="false" org.eventb.core.identifier="demandes" org.eventb.emf.persistence.emf_id="_MO-mcW9GEe6amqEVzbJqOA"/>
+    <org.eventb.core.variable name="_oxXtEG8_Ee6amqEVzbJqOA" org.eventb.core.generated="false" org.eventb.core.identifier="direction" org.eventb.emf.persistence.emf_id="_MO-mcm9GEe6amqEVzbJqOA"/>
+</org.eventb.core.machineFile>

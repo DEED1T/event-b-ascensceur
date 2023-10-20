@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.core.generated="false" org.eventb.emf.persistence.emf_id="_H42lpG9EEe6amqEVzbJqOA" org.eventb.texttools.text_lastmodified="1697804887290" org.eventb.texttools.text_representation="context c0Etage&#10;constants E D&#10;axioms&#10;@E_ty E ∈ ℕ1&#10;@D_ty D = {1,−1}&#10;end&#10;" version="3">
+    <org.eventb.core.axiom name="_Mk3zoGnEEe6mpes-9iWlmA" org.eventb.core.generated="false" org.eventb.core.label="E_ty" org.eventb.core.predicate="E ∈ ℕ1" org.eventb.emf.persistence.emf_id="_H42lom9EEe6amqEVzbJqOA"/>
+    <org.eventb.core.axiom name="_Ugdb0G9DEe6amqEVzbJqOA" org.eventb.core.generated="false" org.eventb.core.label="D_ty" org.eventb.core.predicate="D = {1,−1}" org.eventb.emf.persistence.emf_id="_H42lo29EEe6amqEVzbJqOA"/>
+    <org.eventb.core.constant name="_Mk5BwGnEEe6mpes-9iWlmA" org.eventb.core.generated="false" org.eventb.core.identifier="E" org.eventb.emf.persistence.emf_id="_H42loG9EEe6amqEVzbJqOA"/>
+    <org.eventb.core.constant name="_H44a0G9EEe6amqEVzbJqOA" org.eventb.core.generated="false" org.eventb.core.identifier="D" org.eventb.emf.persistence.emf_id="_H42loW9EEe6amqEVzbJqOA"/>
+</org.eventb.core.contextFile>
