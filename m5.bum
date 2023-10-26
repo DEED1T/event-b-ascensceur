@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.core.generated="false" org.eventb.emf.persistence.emf_id="_D-Dfx3QIEe6toKRs1SnhBA" org.eventb.texttools.text_lastmodified="1698328847006" org.eventb.texttools.text_representation="machine m5 refines m4 sees c0Etage&#10;variables&#10;  etage&#10;  demandes&#10;  direction&#10;  moteur&#10;  porte //Nouvelle variable pour la gestion de la porte&#10;invariants&#10;  @porte_ty porte ∈ {0, 1, 2, 3}  //0: fermée, 1: ouverture, 2: ouverte, 3: fermeture&#10;events&#10;  event INITIALISATION extends INITIALISATION&#10;  then&#10;    @init4 porte ≔ 0&#10;  end&#10;&#10;  event DEMANDE_MONTE extends DEMANDE_MONTE&#10;  then&#10;    @porte_ferme porte ≔ 0&#10;  end&#10;&#10;  event DEMANDE_DESCEND extends DEMANDE_DESCEND&#10;  then&#10;    @porte_ferme porte ≔ 0&#10;  end&#10;&#10;  event OUVRIR_PORTE extends SE_DEPLACER_MONTE&#10;  when&#10;    @porte_ferme porte = 0&#10;  then&#10;    @porte_ouverture porte ≔ 1&#10;  end&#10;&#10;  event FERMER_PORTE extends SE_DEPLACER_MONTE&#10;  when&#10;    @porte_ouverture porte = 1&#10;  then&#10;    @porte_fermeture porte ≔ 3&#10;  end&#10;&#10;  event REFERMER_PORTE extends SE_DEPLACER_MONTE&#10;  when&#10;    @porte_fermeture porte = 3&#10;  then&#10;    @porte_ouverte porte ≔ 2&#10;  end&#10;&#10;  event OUVRIR_PORTE_DESCEND extends SE_DEPLACER_DESCEND&#10;  when&#10;    @porte_ferme porte = 0&#10;  then&#10;    @porte_ouverture porte ≔ 1&#10;  end&#10;&#10;  event FERMER_PORTE_DESCEND extends SE_DEPLACER_DESCEND&#10;  when&#10;    @porte_ouverture porte = 1&#10;  then&#10;    @porte_fermeture porte ≔ 3&#10;  end&#10;&#10;  event REFERMER_PORTE_DESCEND extends SE_DEPLACER_DESCEND&#10;  when&#10;    @porte_fermeture porte = 3&#10;  then&#10;    @porte_ouverte porte ≔ 2&#10;  end&#10;end&#10;" version="5">
+    <org.eventb.core.refinesMachine name="_CHuLkHPFEe6jDrWIGElyUQ" org.eventb.core.target="m4"/>
+    <org.eventb.core.seesContext name="_CHuyoHPFEe6jDrWIGElyUQ" org.eventb.core.target="c0Etage"/>
+    <org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="INITIALISATION" org.eventb.emf.persistence.emf_id="_D-Dfp3QIEe6toKRs1SnhBA">
+        <org.eventb.core.action name="_UO4L8HPKEe6jDrWIGElyUQ" org.eventb.core.assignment="porte ≔ 0" org.eventb.core.generated="false" org.eventb.core.label="init4" org.eventb.emf.persistence.emf_id="_D-DfpnQIEe6toKRs1SnhBA"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_UO4zAHPKEe6jDrWIGElyUQ" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="DEMANDE_MONTE" org.eventb.emf.persistence.emf_id="_D-DfqnQIEe6toKRs1SnhBA">
+        <org.eventb.core.refinesEvent name="_UO5aEHPKEe6jDrWIGElyUQ" org.eventb.core.target="DEMANDE_MONTE"/>
+        <org.eventb.core.action name="_UO5aEXPKEe6jDrWIGElyUQ" org.eventb.core.assignment="porte ≔ 0" org.eventb.core.generated="false" org.eventb.core.label="porte_ferme" org.eventb.emf.persistence.emf_id="_D-DfqXQIEe6toKRs1SnhBA"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_UO6BIHPKEe6jDrWIGElyUQ" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="DEMANDE_DESCEND" org.eventb.emf.persistence.emf_id="_D-DfrXQIEe6toKRs1SnhBA">
+        <org.eventb.core.refinesEvent name="_UO6oMHPKEe6jDrWIGElyUQ" org.eventb.core.target="DEMANDE_DESCEND"/>
+        <org.eventb.core.action name="_UO6oMXPKEe6jDrWIGElyUQ" org.eventb.core.assignment="porte ≔ 0" org.eventb.core.generated="false" org.eventb.core.label="porte_ferme" org.eventb.emf.persistence.emf_id="_D-DfrHQIEe6toKRs1SnhBA"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_UO7PQHPKEe6jDrWIGElyUQ" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="OUVRIR_PORTE" org.eventb.emf.persistence.emf_id="_D-DfsXQIEe6toKRs1SnhBA">
+        <org.eventb.core.refinesEvent name="_UO72UHPKEe6jDrWIGElyUQ" org.eventb.core.target="SE_DEPLACER_MONTE"/>
+        <org.eventb.core.action name="_UO8dYHPKEe6jDrWIGElyUQ" org.eventb.core.assignment="porte ≔ 1" org.eventb.core.generated="false" org.eventb.core.label="porte_ouverture" org.eventb.emf.persistence.emf_id="_D-DfsHQIEe6toKRs1SnhBA"/>
+        <org.eventb.core.guard name="_UO9rgHPKEe6jDrWIGElyUQ" org.eventb.core.generated="false" org.eventb.core.label="porte_ferme" org.eventb.core.predicate="porte = 0" org.eventb.emf.persistence.emf_id="_D-Dfr3QIEe6toKRs1SnhBA"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_UO-5oHPKEe6jDrWIGElyUQ" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="FERMER_PORTE" org.eventb.emf.persistence.emf_id="_D-DftXQIEe6toKRs1SnhBA">
+        <org.eventb.core.refinesEvent name="_UO-5oXPKEe6jDrWIGElyUQ" org.eventb.core.target="SE_DEPLACER_MONTE"/>
+        <org.eventb.core.action name="_UO-5onPKEe6jDrWIGElyUQ" org.eventb.core.assignment="porte ≔ 3" org.eventb.core.generated="false" org.eventb.core.label="porte_fermeture" org.eventb.emf.persistence.emf_id="_D-DftHQIEe6toKRs1SnhBA"/>
+        <org.eventb.core.guard name="_UO_gsHPKEe6jDrWIGElyUQ" org.eventb.core.generated="false" org.eventb.core.label="porte_ouverture" org.eventb.core.predicate="porte = 1" org.eventb.emf.persistence.emf_id="_D-Dfs3QIEe6toKRs1SnhBA"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_UO_gsXPKEe6jDrWIGElyUQ" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="REFERMER_PORTE" org.eventb.emf.persistence.emf_id="_D-DfuXQIEe6toKRs1SnhBA">
+        <org.eventb.core.refinesEvent name="_UPAHwHPKEe6jDrWIGElyUQ" org.eventb.core.target="SE_DEPLACER_MONTE"/>
+        <org.eventb.core.action name="_D-wDMHQIEe6toKRs1SnhBA" org.eventb.core.assignment="porte ≔ 2" org.eventb.core.generated="false" org.eventb.core.label="porte_ouverte" org.eventb.emf.persistence.emf_id="_D-DfuHQIEe6toKRs1SnhBA"/>
+        <org.eventb.core.guard name="_truGAHQHEe6toKRs1SnhBA" org.eventb.core.generated="false" org.eventb.core.label="porte_fermeture" org.eventb.core.predicate="porte = 3" org.eventb.emf.persistence.emf_id="_D-Dft3QIEe6toKRs1SnhBA"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_UPBV4XPKEe6jDrWIGElyUQ" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="OUVRIR_PORTE_DESCEND" org.eventb.emf.persistence.emf_id="_D-DfvXQIEe6toKRs1SnhBA">
+        <org.eventb.core.refinesEvent name="_UPB88HPKEe6jDrWIGElyUQ" org.eventb.core.target="SE_DEPLACER_DESCEND"/>
+        <org.eventb.core.action name="_UPB88XPKEe6jDrWIGElyUQ" org.eventb.core.assignment="porte ≔ 1" org.eventb.core.generated="false" org.eventb.core.label="porte_ouverture" org.eventb.emf.persistence.emf_id="_D-DfvHQIEe6toKRs1SnhBA"/>
+        <org.eventb.core.guard name="_UPCkAHPKEe6jDrWIGElyUQ" org.eventb.core.generated="false" org.eventb.core.label="porte_ferme" org.eventb.core.predicate="porte = 0" org.eventb.emf.persistence.emf_id="_D-Dfu3QIEe6toKRs1SnhBA"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_UPDLEHPKEe6jDrWIGElyUQ" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="FERMER_PORTE_DESCEND" org.eventb.emf.persistence.emf_id="_D-DfwXQIEe6toKRs1SnhBA">
+        <org.eventb.core.refinesEvent name="_UPDLEXPKEe6jDrWIGElyUQ" org.eventb.core.target="SE_DEPLACER_DESCEND"/>
+        <org.eventb.core.action name="_UPAHwXPKEe6jDrWIGElyUQ" org.eventb.core.assignment="porte ≔ 3" org.eventb.core.generated="false" org.eventb.core.label="porte_fermeture" org.eventb.emf.persistence.emf_id="_D-DfwHQIEe6toKRs1SnhBA"/>
+        <org.eventb.core.guard name="_UPAu0HPKEe6jDrWIGElyUQ" org.eventb.core.generated="false" org.eventb.core.label="porte_ouverture" org.eventb.core.predicate="porte = 1" org.eventb.emf.persistence.emf_id="_D-Dfv3QIEe6toKRs1SnhBA"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_UPDyIXPKEe6jDrWIGElyUQ" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="REFERMER_PORTE_DESCEND" org.eventb.emf.persistence.emf_id="_D-DfxXQIEe6toKRs1SnhBA">
+        <org.eventb.core.refinesEvent name="_UPEZMHPKEe6jDrWIGElyUQ" org.eventb.core.target="SE_DEPLACER_DESCEND"/>
+        <org.eventb.core.action name="_D-xRUHQIEe6toKRs1SnhBA" org.eventb.core.assignment="porte ≔ 2" org.eventb.core.generated="false" org.eventb.core.label="porte_ouverte" org.eventb.emf.persistence.emf_id="_D-DfxHQIEe6toKRs1SnhBA"/>
+        <org.eventb.core.guard name="_tr0MoHQHEe6toKRs1SnhBA" org.eventb.core.generated="false" org.eventb.core.label="porte_fermeture" org.eventb.core.predicate="porte = 3" org.eventb.emf.persistence.emf_id="_D-Dfw3QIEe6toKRs1SnhBA"/>
+    </org.eventb.core.event>
+    <org.eventb.core.invariant name="_UPFnUXPKEe6jDrWIGElyUQ" org.eventb.core.comment="0: fermée, 1: ouverture, 2: ouverte, 3: fermeture" org.eventb.core.generated="false" org.eventb.core.label="porte_ty" org.eventb.core.predicate="porte ∈ {0, 1, 2, 3}" org.eventb.emf.persistence.emf_id="_D-DfpXQIEe6toKRs1SnhBA"/>
+    <org.eventb.core.variable name="_UPGOYHPKEe6jDrWIGElyUQ" org.eventb.core.generated="false" org.eventb.core.identifier="etage" org.eventb.emf.persistence.emf_id="_D-DfoHQIEe6toKRs1SnhBA"/>
+    <org.eventb.core.variable name="_UPGOYXPKEe6jDrWIGElyUQ" org.eventb.core.generated="false" org.eventb.core.identifier="demandes" org.eventb.emf.persistence.emf_id="_D-DfoXQIEe6toKRs1SnhBA"/>
+    <org.eventb.core.variable name="_UPG1cHPKEe6jDrWIGElyUQ" org.eventb.core.generated="false" org.eventb.core.identifier="direction" org.eventb.emf.persistence.emf_id="_D-DfonQIEe6toKRs1SnhBA"/>
+    <org.eventb.core.variable name="_UPG1cXPKEe6jDrWIGElyUQ" org.eventb.core.generated="false" org.eventb.core.identifier="moteur" org.eventb.emf.persistence.emf_id="_D-Dfo3QIEe6toKRs1SnhBA"/>
+    <org.eventb.core.variable name="_UPG1cnPKEe6jDrWIGElyUQ" org.eventb.core.comment="Nouvelle variable pour la gestion de la porte" org.eventb.core.generated="false" org.eventb.core.identifier="porte" org.eventb.emf.persistence.emf_id="_D-DfpHQIEe6toKRs1SnhBA"/>
+</org.eventb.core.machineFile>
